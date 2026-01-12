@@ -1,11 +1,35 @@
-<html>
+<!-- fix: Page lacks the HTML doctype, thus triggering quirks mode -->
+<!DOCTYPE html>
 
+<!-- fix: <html> element does not have a [lang] attribute -->
+<html lang="en">
 <head>
-  <title>Document</title>
+  <meta charset="UTF-8">
+
+  <!-- fix: Helps compatibility / best practices -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- fix: Does not have a <meta name="viewport"> tag with width or initial-scale -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- fix: Document doesn't have a <title> element -->
+  <title>test001 - Hello World</title>
+
+  <!-- fix: Document does not have a meta description -->
+  <meta name="description" content="A simple Hello World page for Google Lighthouse testing on GitHub Pages.">
+
+  <!-- fix (Performance): Avoid loading large external libraries (e.g., jQuery CDN) for a simple page.
+       External scripts add network cost and can reduce Performance score on Mobile throttling. -->
 </head>
 
 <body>
-  Hello World!
-</body>
+  <!-- fix (Accessibility): Use semantic landmarks + headings for better page structure -->
+  <header>
+    <h1>Hello World!</h1>
+  </header>
 
+  <main>
+    <p>This is test001.html for Lighthouse auditing.</p>
+  </main>
+</body>
 </html>
