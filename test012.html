@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Title</title>
+  <!-- FIX (Best Practices): Ensure standards mode -->
+  <meta charset="UTF-8">
+
+  <!-- FIX (Responsive / SEO): Proper viewport for mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Put your description here.">
+
+  <!-- FIX (SEO): Use a meaningful, descriptive title -->
+  <title>Wallpaper Display Page</title>
+
+  <!-- FIX (SEO): Add meta description for search engines -->
+  <meta name="description" content="A simple webpage displaying an optimized image, improved using Google Lighthouse recommendations.">
 </head>
 
 <body>
-  <img src="img\wallpaper.jpg">
-</body>
+  <!-- FIX (Accessibility): Use semantic structure -->
+  <main>
+    <!-- FIX (Accessibility / SEO): Add a clear page heading -->
+    <h1>Wallpaper Preview</h1>
 
+    <!-- FIX (Performance): Specify width and height to prevent layout shift -->
+    <!-- FIX (Accessibility): Provide alt text for screen readers -->
+    <img 
+      src="img/wallpaper.jpg" 
+      alt="Decorative wallpaper background"
+      width="800"
+      height="450"
+      loading="lazy">
+  </main>
+</body>
 </html>
